@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/resourcesLandingPage.css">
+    <title>Resources Landing Page</title>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mainnav");
+            if (x.className === "navbar") {
+                x.className += "  responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!---NavBar Starts--->
+    <div class="navbar" id="mainnav">
+
+        <div>
+            <div class="left"><img src="../images/logobg.png" alt=""></div>
+        </div>
+
+        <nav>
+
+            <div class="navbar-links">
+                <a href="../html/Home.html" class="active" style="margin-left: 75px">Home</a>
+                <div class="subnav">
+                    <button class="subnavbtn">Experiences<i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="../html/internshipLanding.html">Internship Experience</a>
+                        <a href="../html/placementLanding.html">Placement Experience</a>
+
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Suggestions <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="../html/seminar.html">Seminar</a>
+                        <a href="../html/projectIdeas.html">Projects</a>
+                        <a href="../html/resumeBuilding.html">Resume Building</a>
+
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Roadmaps<i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="../html/roadmapDSA.html">Data Structures and Algorithms</a>
+                        <a href="../html/webDevelopment.html">Web Development</a>
+                        <a href="../html/ai_mlRoadmap.html">AI/ML</a>
+                        <a href="../html/androidRoadmap.html">Android Development</a>
+                    </div>
+                </div>
+
+                <a href="../html/resourcesLandingPage.html">Resources</a>
+                <a href="../html/motivation.html">Motivation</a>
+                <a href="../jsp/discussionLandingPage.jsp">Discussion forum</a>
+
+                <div class="subnav">
+
+                    <button class="subnavbtn" id="profile">You<i class="fa fa-caret-down"></i></button>
+
+                    <div class="subnav-content" id="profile">
+                        <a href="../jsp/studentProfile.jsp" target="_blank">View Profile</a>
+                        <a href="../jsp/logout.jsp">Logout</a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+    </div>
+
+    <!---------NavBar Ends----------->
+    <div class="container">
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h1>Data Structures and Algorithms</h1> <br>
+                    <a href='../jsp/viewResources.jsp?subject=DSA'>View Resources</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h1>Database Management Systems</h1> <br>
+                    <a href='../jsp/viewResources.jsp?subject=DBMS'>View Resources</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h1>Operating Systems</h1> <br>
+                    <a href='../jsp/viewResources.jsp?subject=OS'>View Resources</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h1>Computer Networks</h1> <br>
+                    <a href='../jsp/viewResources.jsp?subject=CN'>View Resources</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h1>Object Oriented Programming</h1> <br>
+                    <a href='../jsp/viewResources.jsp?subject=OOP'>View Resources</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b">
+        <h4>BVTechHub provides all its users with a ‘Add Resource’ feature as we grow together by uplifting others :)</h4>
+        <br>
+        <button type="submit" class="btn1" name="Add" onclick="window.open('../addResources.jsp');">Add
+            Resource</button>
+        <br> <br> <br>
+    </div>
+    <!-- HTML Code For Footer -->
+    <div class="final">
+        <footer class="ct-footer">
+            <div class="inner-right">
+                <p>Copyright ©️ 2022 BVTechHub.&nbsp; Privacy Policy Rights reserved to BVTechHub<br> Web Design by
+                    CS10
+                    of Banasthali Vidyapith</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motivation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/motivation.css?version6" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---HTML code for the navbar--->
+    <div class="navbar" id="mainnav">
+      <div>
+        <div class="left"><img src="../images/logobg.png" alt="" /></div>
+      </div>
+      <nav>
+        <div class="navbar-links">
+          <a href="../html/Home.html" class="active" style="margin-left: 75px"
+            >Home</a
+          >
+          <div class="subnav">
+            <button class="subnavbtn">
+              Experiences<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="subnav-content">
+              <a href="../html/internshipLanding.html">Internship Experience</a>
+              <a href="../html/placementLanding.html">Placement Experience</a>
+            </div>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">
+              Suggestions <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="subnav-content">
+              <a href="../html/seminar.html">Seminar</a>
+              <a href="../html/projectIdeas.html">Projects</a>
+              <a href="../html/resumeBuilding.html">Resume Building</a>
+            </div>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">
+              Roadmaps<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="subnav-content">
+              <a href="../html/roadmapDSA.html"
+                >Data Structures and Algorithms</a
+              >
+              <a href="../jsp/webDevelopment.jsp">Web Development</a>
+              <a href="../html/ai_mlRoadmap.html">AI/ML</a>
+              <a href="../html/androidRoadmap.html">Android Development</a>
+            </div>
+          </div>
+
+          <a href="../html/resourcesLandingPage.html">Resources</a>
+          <a href="../html/motivation.html">Motivation</a>
+          <a href="../jsp/discussionLandingPage.jsp">Discussion forum</a>
+
+          <div class="subnav">
+            <button class="subnavbtn" id="profile">
+              You<i class="fa fa-caret-down"></i>
+            </button>
+
+            <div class="subnav-content" id="profile">
+              <a href="../jsp/studentProfile.jsp" target="_blank"
+                >View Profile</a
+              >
+              <a href="../jsp/logout.jsp">Logout</a>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            >&#9776;</a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <!--HTML code for the motivation cards which are inside the container class-->
+    <div class="container">
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>Experience is the name everyone gives to their mistakes.</p>
+          <div class="author">
+            <h2>-Oscar Wilde</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            Bad programmers worry about the code. Good programmers worry about
+            data structures and their relationships.
+          </p>
+          <div class="author">
+            <h2>-Linux Torvalds</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            If you want more effective programmers, you will discover that they
+            should not waste their time debugging, they should not introduce the
+            bugs to start with.
+          </p>
+          <div class="author">
+            <h2>-Edsger W. Dijkstra</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            People don't care about what you say, they care about what you
+            build.
+          </p>
+          <div class="author">
+            <h2>-Mark Zuckerberg</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            The function of a good software is to make the complex appear to be
+            simple.
+          </p>
+          <div class="author">
+            <h2>-Grady Booch</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>Testing can only prove the presence of bugs, not their absence.</p>
+          <div class="author">
+            <h2>-Edsger W. Dijkstra</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            Computers are incredibly fast, accurate and stupid. Human beings are
+            incredibly slow, inaccurate and brilliant. Together they are
+            powerful beyond imagination.
+          </p>
+          <div class="author">
+            <h2>-Albert Einstein</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>Before software should be reusable, it should be usable.</p>
+          <div class="author">
+            <h2>-Ralph Johnson</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            Commenting your code is like cleaning your bathroom — you never want
+            to do it, but it really does create a more pleasant experience for
+            you and your guests.
+          </p>
+          <div class="author">
+            <h2>-Ryan Campbell</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            Women are both talented and innovative thinkers and tend to use
+            computer science as a tool to solve larger problems.
+          </p>
+          <div class="author">
+            <h2>-Kimberly Bryant</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            Inside every well-written large program is a well-written small
+            program.
+          </p>
+          <div class="author">
+            <h2>-Tony Hoare</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <img src="../images/quote.webp" alt="" class="quote" />
+          <p>
+            If you're not failing 90% of the time, then you're probably not
+            working on sufficiently challenging problems.
+          </p>
+          <div class="author">
+            <h2>-Alan Kay</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HTML Code For Footer -->
+    <div class="final">
+      <!-- div for responsive footer-->
+      <footer class="ct-footer">
+        <div class="inner-right">
+          <p>
+            Copyright ©️ 2022 BVTechHub.&nbsp; Privacy Policy Rights reserved to
+            BVTechHub<br />
+            Web Design by CS10 of Banasthali Vidyapith
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!--JavaScript code for navbar-->
+    <script>
+      /* Toggle between adding and removing the "responsive" class to navbar when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("mainnav");
+        if (x.className === "navbar") {
+          x.className += "  responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>

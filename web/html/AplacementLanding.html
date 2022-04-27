@@ -1,0 +1,353 @@
+<html>
+    <head>
+        <title>Placement Landing Page with Cards</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/internshipLanding.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <!---Navbar starts--->
+        <div class="navbar" id="mainnav">
+            <div>
+                <div class="left"><img src="../images/logobg.png" alt=""></div>
+            </div>
+            <nav>
+                <div class="navbar-links">
+                    <a href="../html/AHome.html" class="active" style="margin-left: 75px">Home</a>
+                    <div class="subnav">
+                        <button class="subnavbtn">Experiences<i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="../html/AinternshipLanding.html">Internship Experience</a>
+                            <a href="../html/AplacementLanding.html">Placement Experience</a>
+
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnavbtn">Suggestions <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="../html/Aseminar.html">Seminar</a>
+                            <a href="../html/AprojectIdeas.html">Projects</a>
+                            <a href="../html/AresumeBuilding.html">Resume Building</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnavbtn">Roadmaps<i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="../html/AroadmapDSA.html">Data Structures and Algorithms</a>
+                            <a href="../html/AwebDevelopment.html">Web Development</a>
+                            <a href="../html/Aai_mlRoadmap.html">AI/ML</a>
+                            <a href="../html/AandroidRoadmap.html">Android Development</a>
+                        </div>
+                    </div>
+
+                    <a href="../html/AresourcesLandingPage.html">Resources</a>
+                    <a href="../html/Amotivation.html">Motivation</a>
+                    <a href="../jsp/AdiscussionLandingPage.jsp">Discussion forum</a>
+
+                    <div class="subnav">
+                        <button class="subnavbtn" id="profile">You<i class="fa fa-caret-down"></i></button>
+
+                        <div class="subnav-content" id="profile">
+                            <a href="../jsp/adminProfile.jsp" target="_blank">View Profile</a>
+                            <a href="../jsp/changeStudPassByAdmin.jsp" target="_blank">Change Student Password</a>
+                            <a href="../jsp/adminRegister.jsp" target="_blank">Register New Admin</a>
+                            <a href="../jsp/logout.jsp">Logout</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+            </nav>
+        </div>
+        <!----------NAVBAR DONE-----------> 
+        
+        <!--div containing heading-->
+        <div class="heading">
+            <h1>Placement Interview Experiences</h1>
+        </div>
+        
+        <!--div containing all cards-->
+        <div class="body1">
+            <!--div containing container for row 1 having three cards-->
+            <div class="container">
+                <!--div containing card1-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>UBS</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="UBS" &category="Placement"'>
+                            <img src="../images/ubscard.png" alt="" />
+                        </a>
+
+                    </div>
+                </div>
+                <!--div containing card2-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Myntra</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Myntra" &category="Placement"'>
+                            <img src="../images/myntracard.avif" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card3-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Flipkart</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Flipkart" &category="Placement"'>
+                            <img src="../images/flipkartcard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--div containing container for row 2-->
+            <div class="container"> 
+                <!--div containing card1-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Goldman Sachs</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Goldman Sachs" &category="Placement"'>
+                            <img src="../images/gscard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card2-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>American Express</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="American Express" &category="Placement"'>
+                            <img src="../images/amex.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card3-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Barclays</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Barclays" &category="Placement"'>
+                            <img src="../images/Barclayscard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--div containing container row 3-->
+            <div class="container">
+                <!--div containing card1-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Beckton Dickinson</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Beckton Dickinson" &category="Placement"'>
+                            <img src="../images/bdcard.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card2-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Oracle</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Oracle" &category="Placement"'>
+                            <img src="../images/oraclecard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card3-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Cisco</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Cisco" &category="Placement"'>
+                            <img src="../images/Ciscocard.webp" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--div containing container-->
+            <div class="container">
+                <!--div containing card1-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>TCS</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="TCS" &category="Placement"'>
+                            <img src="../images/TCScard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card2-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>JP Morgan and Chase</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="JP Morgan and Chase" &category="Placement"'>
+                            <img src="../images/jpcard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card3-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Accenture</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Accenture" &category="Placement"'>
+                            <img src="../images/Accenturecard.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--div containing container having 3 cards-->
+            <div class="container">
+                <!--div containing card1-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>MakeMyTrip</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="MakeMyTrip" &category="Placement"'>
+                            <img src="../images/mmtcard.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card2-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>PayTM</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="PayTM" &category="Placement"'>
+                            <img src="../images/PayTMcard.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card3-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>HSBC</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="HSBC" &category="Placement"'>
+                            <img src="../images/HSBCcard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--div containing container-->
+            <div class="container">
+                <!--div containing card1-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Infosys</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Infosys" &category="Placement"'>
+                            <img src="../images/infosyscard.webp" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card2-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Walmart</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Walmart" &category="Placement"'>
+                            <img src="../images/walmartcard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card3-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>D2C</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="D2C" &category="Placement"'>
+                            <img src="../images/d2ccard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>    
+            
+            <!--div containing container-->
+            <div class="container">
+                <!--div containing card1-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>McKinsey and Co.</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="McKinsey" &category="Placement"'>
+                            <img src="../images/mccard.webp" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card2-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>IBM</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="IBM" &category="Placement"'>
+                            <img src="../images/ibmcard.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!--div containing card3-->
+                <div class="box">
+                    <span></span>
+                    <div class="content">
+                        <h2>Others</h2>
+                        <a href='../jsp/AexpCompanyPlacement.jsp?cname="Others" &category="Placement"'>
+                            <img src="../images/others.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <!--div containing button-->
+        <div class="b">
+            <h4>BVTechHub provides all its users with a ‘Add Experience’ feature as we grow together by lifting others :)</h4>
+            <br>
+            <button type="submit" class="btn" name="Add" onclick="window.open('../jsp/deletePlacementExperiences.jsp')" >Delete Experience</button>
+
+        </div>
+
+        <!-- div for responsive footer-->
+        <div class="final">
+            
+            <footer class="ct-footer">     
+                <div class="inner-right">
+                    <p>Copyright © 2022 BVTechHub.&nbsp; Privacy Policy Rights reserved to BVTechHub<br> Web Design by CS10 of Banasthali Vidyapith</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+    
+    <!--javascript-->
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("mainnav");
+            if (x.className === "navbar") {
+                x.className += "  responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+    
+</html>
+
