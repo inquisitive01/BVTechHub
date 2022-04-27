@@ -1,0 +1,412 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS for logo */
+.left img {
+    width: 170px;
+}
+
+/* CSS for styling heading */
+h1{
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* CSS for styling table */
+table {
+    width:15%;
+    background-color: pink;
+    border-collapse: collapse; 
+    table-layout: auto;
+}
+
+/* CSS for styling table header */
+th{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: bolder;
+    font-size: x-large;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'El Messiri', sans-serif;
+}
+
+/* CSS for styling table row */
+tr {
+    border: 1px solid transparent;
+    z-index:7;
+}
+
+/* CSS for styling table data */
+td {
+    font-family: 'El Messiri', sans-serif;
+    text-align:center;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+td.highlight {
+    padding:0;
+    width:4px;
+}
+
+td.highlight div {
+    width:4px;
+    height:60px;
+    border-radius:4px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+/* CSS to add hover effect */
+tr:hover {
+    box-shadow: 0px 9px 4px -6px grey;
+    background-color: lightcyan;
+}
+
+tr:hover td{
+    cursor:pointer;
+    color:darkblue;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+tr:hover td.highlight div {
+    transform: scaleX(3);
+}
+
+/* CSS for body */
+body {
+    background: rgb(122,74,136);
+    background: linear-gradient(90deg, rgba(122,74,136,1) 0%, rgba(122,74,136,1) 46%, rgba(70,169,191,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    font-size: x-large;
+}
+
+/* Media query */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* CSS for positioning of table */
+section{
+    margin: 50px;
+}
+
+/* CSS for scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+/* CSS for styling button */
+.b{
+    justify-content: center;
+    display: flex;
+}
+
+.btn1{
+    font-family: 'El Messiri', sans-serif;
+    background-color: skyblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 18px;
+    padding: 10px;
+    height: 10%;
+}
+
+/* CSS for styling h4 heading */
+h4{
+    text-align: center;
+}
+
+/* CSS for styling the question */
+#question{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CSS for styling the date */
+#date{
+    text-align:right;
+}
+
+/* CSS for styling the time */
+#time{
+    text-align:right;
+}
+
+/* CSS for footer */
+.final {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 300px;
+}
+
+.inner-right {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.inner-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* CSS for styling the navbar*/
+.navbar .left a img {
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    margin-right: 30px;
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Volkhov', serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.navbar .left {
+    float: left;
+    display: block;
+    font-size: 1.25rem;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Volkhov', serif;
+    font-weight: bold;
+    margin-top: 0;
+
+}
+
+.navbar .left img {
+    width: 170px;
+    margin-top: 10px;
+}
+
+.navbar a.icon {
+    display: none;
+    background-color: black;
+    margin-left: 170px;
+}
+
+.subnav {
+    float: left;
+}
+
+.subnav .subnavbtn {
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: black;
+    font-family: 'Volkhov', serif;
+    margin: 0;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.subnav-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: white;
+    margin-top: 0px;
+    background-color: black;
+}
+
+.navbar a:hover {
+    background-color: lightseagreen;
+    border: white;
+    color: white;
+}
+
+.subnav .subnavbtn:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.subnav-content a:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+    background-color: black;
+    color: black;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a,
+    .subnav .subnavbtn {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+        width: 100%;
+        background-size: 100% 100%
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: 35px;
+    }
+
+    .navbar.responsive .left {
+        float: none;
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .navbar.responsive .subnav {
+        float: none;
+    }
+
+    .navbar.responsive .subnav-content {
+        position: relative;
+    }
+
+    .navbar.responsive .subnav .subnavbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-left: 35px;
+    }
+
+    .navbar.responsive .subnav-content {
+        margin-left: 0;
+    }
+
+    .navbar.responsive #profile {
+        margin-left: 35px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar a,
+    .subnav .subnavbtn {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+#profile {
+    margin-left: 75px;
+}
+
+.navbar .active {
+    margin-left: 35px;
+
+}
+/*css incase of no record*/
+#error {
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    display: block;
+}

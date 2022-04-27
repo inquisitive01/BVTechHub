@@ -1,0 +1,87 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS for logo */
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.left img {
+    width: 170px;
+}
+
+/* CSS for body */
+body {
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(122, 74, 136);
+    background-color: linear-gradient(90deg, rgba(122, 74, 136, 1) 0%, rgba(122, 74, 136, 1) 46%, rgba(70, 169, 191, 1) 100%);
+}
+
+/* CSS for div of display of description */
+.a {
+    font-size: 26px;  
+    font-family: 'Acme', sans-serif;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    margin-right: 110px;
+    margin-left: 150px;
+}
+
+/* CSS for container */
+.container {
+    border-radius: 25px;
+    margin: 100px 80px 100px 80px;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
+    background-image: linear-gradient(to bottom, #d4a2c2, #dda5b7, #e1aaae, #e1b1a8, #ddb8a6);
+}
+
+.container h2 {
+    color: purple;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 35px;
+    font-family: 'Potta One', cursive;
+}
+
+.container h3 {
+    color: purple;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Potta One', cursive;
+}
+
+/* CSS for footer */
+.inner-right {
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.inner-right a {
+    text-decoration: none;
+}
+
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}

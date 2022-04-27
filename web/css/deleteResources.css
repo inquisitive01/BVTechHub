@@ -1,0 +1,225 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*css for logo*/
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+.left img {
+    width: 170px;
+}
+.delete {
+    margin-top: 100px;
+}
+
+/*css for the heading*/
+h1 {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*css for the table*/
+table {
+    table-layout: fixed;
+}
+
+/*css for table column headings bar*/
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Playfair Display', serif;
+}
+
+/*css for table data*/
+.tbl-content {
+    height: auto;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*css for table column headings*/
+th {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: x-large;
+    color: black;
+    margin-left: 0;
+    text-transform: uppercase;
+    font-family: 'El Messiri', sans-serif;
+}
+td {
+    font-family: 'El Messiri', sans-serif;
+    padding: 15px;
+    text-align: centre;
+    vertical-align: left;
+    font-weight: bolder;
+    font-size: x-large;
+    color: black;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+td a {
+    color: black;
+    text-decoration: none;
+}
+
+/*css for the body of the page*/
+body {
+    background: rgb(122, 74, 136);
+    background: linear-gradient(90deg, rgba(122, 74, 136, 1) 0%, rgba(122, 74, 136, 1) 46%, rgba(70, 169, 191, 1) 100%);
+    font-family: 'Potta One', cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.link1 {
+    text-decoration: none;
+    color: black;
+}
+section {
+    margin: 50px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.tbl-content:hover {
+    font-weight: bold;
+    box-shadow: 0px 9px 4px -6px grey;
+    background-color: lightcyan;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+/*css for footer*/
+.inner-right {
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.inner-right a {
+    text-decoration: none;
+    color: white;
+}
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*css for checkbox*/
+input[type=checkbox] {
+    cursor: pointer;
+    display: block;
+    width: 34px;
+    margin-left: 60px;
+    height: 34px;
+    border: 4px solid #FFCB9A;
+    border-radius: 20px;
+    background-color: #445768;
+}
+
+/*css for submit button*/
+input[type=submit] {
+    font-family: 'El Messiri', sans-serif;
+    background-color: skyblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 0px;
+    font-size: 30px;
+    padding: 7px;
+    height: 4%;
+    justify-content: center;
+}
+
+/*css for searchbox*/
+.searchBox {
+    width: 25%;
+    margin: auto;
+}
+.searchBox input {
+    width: 75%;
+    border: 3px solid black;
+    border-radius: 20px;
+    border-right: 0px;
+    font-size: large;
+    font-family: 'Potta One', cursive;
+    padding: 12px;
+    background: lightgray;
+    color: black;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+.searchBox button {
+    width: 25%;
+    border: 3px solid white;
+    border-radius: 15px;
+    font-size: medium;
+    font-family: 'Potta One', cursive;
+    padding: 7px;
+    text-align: center;
+    height: 50px;
+    float: right;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.searchBox button:hover {
+    border: 3px solid lightgray;
+    background: white;
+    opacity: 0.8;
+}
+.searchBox input:hover {
+    opacity: 0.8;
+}
+
+/*css incase of no record*/
+#error {
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    display: block;
+}

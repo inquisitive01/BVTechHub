@@ -1,0 +1,127 @@
+/* css reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: rgb(154, 113, 166);
+    background: linear-gradient(90deg, rgba(154, 113, 166, 1) 0%, rgba(198, 161, 209, 1) 46%, rgba(140, 201, 214, 1) 100%);
+}
+
+body {
+    font-family: poppins;
+    font-size: 16px;
+    color: #fff;
+}
+
+/*CSS for the logo of BVTechHub*/
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.left img {
+    width: 170px;
+}
+
+/*CSS for the add answer form box*/
+.form-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+}
+
+/*CSS for the background of the webpage*/
+.form-box:before {
+    background: rgb(154, 113, 166);
+    background: linear-gradient(90deg, rgba(154, 113, 166, 1) 0%, rgba(198, 161, 209, 1) 46%, rgba(140, 201, 214, 1) 100%);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    filter: blur(2px);
+}
+
+/*CSS for the heading of the form*/
+.form-box .header-text {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/*CSS for Add answer button*/
+.form-box button {
+    background-color: skyblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.form-box button:hover {
+    border-radius: 3px solid skyblue;
+    background-color: #3db0f7;
+}
+
+/*CSS for textarea in add answer*/
+.form-box textarea {
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    font-family: poppins;
+    resize: none;
+}
+
+/*CSS to target the footer*/
+.inner-right {
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.inner-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}

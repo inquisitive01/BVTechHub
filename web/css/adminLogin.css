@@ -1,0 +1,187 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(154, 113, 166);
+    background: linear-gradient(90deg, rgba(154, 113, 166, 1) 0%, rgba(198, 161, 209, 1) 46%, rgba(140, 201, 214, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+/*CSS for the logo*/
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.left img {
+    width: 170px;
+}
+
+/*CSS for the admin login form box*/
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    box-sizing: border-box;
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+/*CSS for hover effect on admin login form box*/
+.loginBox:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    background: rgba(255, 255, 255, 1);
+}
+
+/*CSS for the admin login form heading*/
+h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #262626;
+    text-align: center;
+}
+
+/*CSS for the admin image*/
+.admin {
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/*CSS for the input fields in the admin login form box*/
+.inputBox {
+    position: relative;
+}
+
+.inputBox span {
+    position: absolute;
+    top: 10px;
+    color: #262626;
+}
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #262626;
+    background: transparent;
+    font-size: 14px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+/*CSS for the submit button in the admin login form box*/
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: darkorchid;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.loginBox input[type="submit"]:hover {
+    background: purple;
+    border: 3px solid darkorchid;
+}
+
+/*CSS for the forgot password link in admin login form box*/
+.loginBox a {
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: bold;
+}
+
+/*CSS to give glass effect to the admin login form box*/
+.glass img {
+    border-radius: 50px;
+}
+
+.glass {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.glass:hover {
+    transform: translate(20px, 20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+/*CSS for the error message when admin credentials are invalid*/
+#error {
+    color: red;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-bottom: 100px;
+}
+
+/*CSS to target the footer*/
+.inner-right {
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.inner-right a {
+    text-decoration: none;
+}
+
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}

@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    padding: 0px;
+    background: url("../images/p4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: black;
+}
+
+.top {
+    margin: 0px;
+    padding: 0px;
+    background: url("../images/h15.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.top left {
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+
+#About {
+    position: relative;
+    color: black;
+}
+
+#About::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.top .left img {
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.left div {
+    text-align: left;
+    line-height: 20px;
+    font-size: 15px;
+    height: auto;
+}
+
+#home {
+    height: 550px;
+    margin-top: 30vh;
+}
+
+#home #last p {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-left: 170px;
+}
+
+#home p {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#home h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 120vh;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: 2.8rem;
+    top: auto;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@keyframes animate{
+    
+}
+p {
+    font-family: 'Libre Baskerville', serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.65rem;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/*login drop down button*/
+.dropbtn {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: white;
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    padding: 16px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    height: 99px;
+}
+
+/*login drop down button content like admin and student*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1.5;
+}
+
+.dropdown-content a {
+    /*color: hsl(0, 0%, 100%);*/
+    font-weight: bolder;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.dropdown-content a:hover {
+    /*background-color: #f1f1f1;*/
+    background-color: lightgrey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*targetting navigation bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 34px;
+    top: 40px;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar-links li a {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+    display: block;
+    font-size: 1.8rem;
+}
+
+.navbar-links li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: grey;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    widows: 100%;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* This is for tragetting developer div*/
+.Developer {
+    margin: 20px;
+    padding: 10px;
+}
+
+/*container of slider*/
+.mySlides {
+    display: none;
+    border-radius: 5px;
+    /*width: Calc(100% - 196px);*/
+    width: 100%;
+
+}
+
+/*linkdin effect*/
+.mySlides link-effect {
+    text-decoration: none;
+}
+.final{
+    background: url(../images/pink.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*slider image*/
+img {
+    vertical-: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    top: 10px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text on slider image*/
+.text {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: black;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.Contact {
+    margin: auto;
+    align-items: center;
+    height: 250px;
+}
+#contact h3{
+    margin-top: 10px;
+}
+#contact p {
+    text-align: center;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other*/ 
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+  }
+  .column1 {
+    width: 100%;
+  }
+}
+
+.row {
+    display: flex;
+    clear: both;
+    align-items: center;
+    align-content: center;
+    margin-left: 60px;
+}
+
+/* Create six equal columns that sits next to each other */
+.column {
+    flex: 16.67%;
+    padding: 2px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1%;
+    align-content: center;
+}
+/* Create two equal columns that sits next to each other */
+.column1 {
+    flex: 50%;
+    padding: 3px;
+    align-items: center;
+    margin-right: 1%;
+    align-content: center;
+    margin-left: 50px;
+    float: left;
+}
+.column1 A1{
+    align-content: center;
+}
+.column1 img{
+    padding-left: 2px;
+}
+.Image img{
+    border-radius: 30px;
+}
+/*to target image in column
+.column img{
+    width: 100px;
+    height: 100px
+}*/
+/*to target the footer*/
+.ct-footer{
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+}
+.inner-right{
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.inner-right a{
+    text-decoration: none;
+    color: white;
+}
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}

@@ -1,0 +1,431 @@
+body {
+    background: rgb(154, 113, 166);
+    background: linear-gradient(90deg, rgba(154, 113, 166, 1) 0%, rgba(198, 161, 209, 1) 46%, rgba(140, 201, 214, 1) 100%);
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .left a img {
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    margin-right: 30px;
+}
+
+.navbar {
+    /*overflow: hidden;*/
+    background-color: black;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+
+    display: flex;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    left: 0;
+    z-index: 1;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    display: block;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Volkhov', serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.navbar .left {
+    float: left;
+    display: block;
+    font-size: 1.25rem;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Volkhov', serif;
+    font-weight: bold;
+    margin-top: 0;
+
+}
+
+.navbar .left img {
+    width: 170px;
+    margin-top: 10px;
+}
+
+.navbar a.icon {
+    display: none;
+    background-color: black;
+    margin-left: 170px;
+}
+
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    /*overflow: hidden;*/
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: black;
+    font-family: 'Volkhov', serif;
+    margin: 0;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: white;
+    /*to set distance between of dropdown*/
+    margin-top: 0px;
+    background-color: black;
+}
+
+.navbar a:hover {
+    background-color: lightseagreen;
+    border: white;
+    color: white;
+}
+
+.subnav .subnavbtn:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+
+
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+    background-color: black;
+    color: black;
+}
+
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+@media screen and (max-width: 600px) {
+    .navbar a,
+    .subnav .subnavbtn {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+        width: 100%;
+        background-size: 100% 100%
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: 35px;
+    }
+
+    .navbar.responsive .left {
+        float: none;
+
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .navbar.responsive .subnav {
+        float: none;
+    }
+
+    .navbar.responsive .subnav-content {
+        position: relative;
+    }
+
+    .navbar.responsive .subnav .subnavbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-left: 35px;
+
+    }
+
+    .navbar.responsive .subnav-content {
+        margin-left: 0;
+    }
+
+
+    .navbar.responsive #profile {
+        margin-left: 35px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar a,
+    .subnav .subnavbtn {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+#profile {
+    margin-left: 75px;
+}
+
+.navbar .active {
+    margin-left: 35px;
+
+}
+
+
+.step1 {
+    background: #647c94;
+    margin: 20px;
+    padding: 20px;
+    border: #647c94;
+}
+
+.step2 {
+    background: #9598a9;
+    margin: 20px;
+    padding: 20px;
+    border: #9598a9;
+}
+
+.step3 {
+    background: #80a3bd;
+    margin: 20px;
+    padding: 20px;
+    border: #80a3bd;
+}
+
+.step4 {
+    background: #596570;
+    margin: 20px;
+    padding: 20px;
+    border: #596570;
+}
+
+.one {
+    background: white;
+    align-content: center;
+}
+
+#heading {
+    text-align: center;
+}
+
+#heading h1 {
+    margin-top: 150px;
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-align: center;
+    font-family: "Potta One", cursive;
+    color: black;
+}
+
+#intro {
+    font-family: 'Acme', san-serif;
+    font-size: x-large;
+}
+
+.step1 h3 {
+    text-align: center;
+    font-family: 'Potta One', cursive;
+}
+
+.step2 h3 {
+    text-align: center;
+    font-family: 'Potta One', cursive;
+}
+
+.step3 h3 {
+    text-align: center;
+    font-family: 'Potta One', cursive;
+}
+
+.step4 h3 {
+    text-align: center;
+    font-family: 'Potta One', cursive;
+}
+
+.html1 a b {
+    font-size: xx-large;
+}
+
+h3 {
+    margin-left: 50px;
+    color: black;
+    font-family: 'Potta One', cursive;
+    font-size: xx-large;
+}
+
+p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: x-large;
+}
+
+h2 {
+    font-size: 4vw;
+    font-family: 'Potta One', cursive;
+    color: black;
+}
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.link-effect {
+    margin-left: 0px;
+    color: blue;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.btn-group button {
+    display: flex;
+    background-color: #FFC1C6;
+    border: 1px solid #FFC1C6;
+    color: black;
+    align-self: center;
+    padding: 20px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    width: 48%;
+    /*Set a width if needed */
+    font-family: 'Acme', san-serif;
+    font-size: x-large;
+    font-weight: bold;
+    float: left;
+    /* Float the buttons side by side */
+    text-align: center;
+    margin-left: 10px;
+}
+
+.link-effect {
+    text-decoration: none;
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none;
+    /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: grey;
+}
+
+.btn-group a b {
+    text-align: center;
+}
+
+.html1 h3 {
+    background: white;
+    margin-left: 0;
+    font-size: x-large;
+}
+
+.final {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+/*to target the footer*/
+.inner-right {
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.inner-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}

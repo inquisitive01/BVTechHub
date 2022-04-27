@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+/* css reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* css for body of the page*/
+body {
+    background-color: #f3f3f3;
+}
+
+/*css for wrapper class*/
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
+}
+
+/*css for left side of the page*/
+.wrapper .left {
+    width: 35%;
+    background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #9092d7, #868bcc, #7d83c2, #7668a5, #6d4d86, #633468, #551949);
+    padding: 30px 25px;
+    text-align: center;
+    color: #fff;
+}
+
+/*admin logo*/
+.wrapper .left img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    width: 75%;
+}
+
+/*name of the admin*/
+.wrapper .left h4 {
+    margin-bottom: 45px;
+    margin-top: 70px;
+    font-size: 40px;
+
+}
+
+/*designation(admin)*/
+.wrapper .left p {
+    font-size: 25px;
+
+}
+
+/*css for right side of the page*/
+.wrapper .right {
+    width: 65%;
+    background: #fff;
+    padding: 30px 25px;
+}
+
+/*css for information on the right side of the page*/
+.wrapper .right .info,
+.wrapper .right .projects {
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+.wrapper .right .info h3,
+.wrapper .right .projects h3 {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4 {
+    color: #353c4e;
+
+    margin-top: 20px;
+    font-size: 36px;
+    padding-bottom: 10px;
+
+}
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: #919aa3;
+    padding-bottom: 10px;
+}
+
+/*css for buttons*/
+.wrapper .right .info .change {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+.wrapper .right .info .change .btn button {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 23px;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #9092d7, #868bcc, #7d83c2, #7668a5, #6d4d86, #633468, #551949);
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 25px;
+    margin-top: 40px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    justify-content: space-between;
+}
+.wrapper .right .info .change .btn button:hover {
+    background: purple;
+    border: 3px solid darkorchid;
+}
+
+/*to target the footer*/
+.inner-right {
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.inner-right a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}

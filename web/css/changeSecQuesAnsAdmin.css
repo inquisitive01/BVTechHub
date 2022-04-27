@@ -1,0 +1,121 @@
+/* css reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to right, #d16ba5 0%, #7668a5 90%);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*CSS for the logo of the website*/
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.left img {
+    width: 170px;
+}
+
+/*CSS for the admin change security question and answer form box*/
+.form-box {
+    background: linear-gradient(to top, #33ccff 0%, #9999ff 100%);
+    margin: auto auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 400px;
+}
+
+/*CSS to target the heading of the form*/
+.form-box .header-text {
+    font-size: 28px;
+    text-shadow: 2px 2px plum;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: black;
+}
+
+/*CSS for the input fields in the form*/
+.form-box input {
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: poppins;
+}
+
+/*CSS to target the submit button on the form*/
+.form-box button {
+    background: #d24dff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    margin-top: 50px;
+}
+
+/*CSS for the hover effect on the submit button in the form*/
+.form-box button:hover {
+    background-color: darkmagenta;
+}
+
+/*CSS for the drop down list items*/
+.form-box select {
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: poppins;
+}
+
+/*CSS to target the footer*/
+.inner-right {
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.inner-right a {
+    text-decoration: none;
+}
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}

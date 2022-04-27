@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS for the logo of the website*/
+.left img {
+    width: 170px;
+}
+
+/*CSS to target the "Resources" heading of the table*/
+h1{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+table{
+    table-layout: fixed;
+}
+
+/*CSS for the tbl-header class where the headings are to displayed in the table columns*/
+.tbl-header{
+    background-color: rgba(255,255,255,0.3);
+    font-family: 'Playfair Display', serif;
+}
+
+/*CSS for the tbl-content class where the resources are to displayed in the table*/
+.tbl-content{
+    height:auto;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/*CSS to target the table heading*/
+th{
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: bolder;
+    font-size: x-large;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'El Messiri', sans-serif;
+}
+
+/*CSS to target the table data*/
+td{
+    font-family: 'El Messiri', sans-serif;
+    padding: 15px;
+    text-align: center;
+    vertical-align:left;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.2);
+}
+
+body{
+    background: rgb(122,74,136);
+    background: linear-gradient(90deg, rgba(122,74,136,1) 0%, rgba(122,74,136,1) 46%, rgba(70,169,191,1) 100%);
+    font-family: 'Potta One', cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+    min-height: 100vh;
+}
+
+section{
+    margin: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+/*CSS for the hover effect in tbl-content div where the resources are to displayed in the table*/
+.tbl-content:hover{
+    box-shadow: 0px 9px 4px -6px grey;
+    background-color: lightcyan;
+    font-weight: bold;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+/*CSS for the <a> tag where the download link is present*/
+td a{
+    text-decoration: none;
+    color: purple;
+}
+
+/*CSS for the hover effect on the table data*/
+td a:hover{
+    color: blueviolet;
+}
+
+/*CSS to target the footer*/ 
+.inner-right{
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    left:0;
+    bottom:0;
+}
+.inner-right a{
+    text-decoration: none;
+    color: white;
+}
+.inner-right p {
+    font-family: 'Acme', san-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*CSS for the error message to be displayed*/
+#error {
+    color: white;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    display: block;
+}
