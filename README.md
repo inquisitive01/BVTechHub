@@ -97,11 +97,11 @@ This page allows the student/admin to view question and answer in the discussion
 
 ![image](https://user-images.githubusercontent.com/92745924/165598826-bcf32b51-fd07-40d4-b973-7d282a0ba7dd.png)
 
-- Add question page for the student
+- **Add question page for the student**
 
 ![image](https://user-images.githubusercontent.com/92745924/165599039-0fe2950f-e315-44c4-a76f-b9a6a123960b.png)
 
-- Add answer page for the student
+- **Add answer page for the student**
 
 ![image](https://user-images.githubusercontent.com/92745924/165599256-76802c3a-6375-4e57-b837-3a9505d2328f.png)
 
