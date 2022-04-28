@@ -83,7 +83,7 @@ The resources tab will allow the student/admin to view and download the resource
 
 - Delete resources page for admin
 
-
+![image](https://user-images.githubusercontent.com/92745924/165688468-a7da08fe-83a0-4e4d-8a66-d14065bfbd38.png)
 
 ## Motivation Page
 This page allows the student/admin to view motivational content.
