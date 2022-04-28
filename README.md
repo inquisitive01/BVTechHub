@@ -14,7 +14,7 @@ The Landing page will contain information about the website along with contact u
 
 ## Login Page
 The login page will be opened for the student as well as admin where they are supposed to enter
-username and password for logging into the website and performing further activities
+emailid and password for logging into the website and performing further activities
 or desired task.
 
 - **Student Login**
@@ -77,11 +77,11 @@ The resources tab will allow the student/admin to view and download the resource
 
 ![image](https://user-images.githubusercontent.com/92745924/165598252-6c383dc2-bee4-4bed-80db-693ce893610b.png)
 
-- Add resource page for student
+- **Add resource page for student**
 
 ![image](https://user-images.githubusercontent.com/92745924/165598371-4e35339c-2f32-4118-820c-aeea31848ddb.png)
 
-- Delete resources page for admin
+- **Delete resources page for admin**
 
 ![image](https://user-images.githubusercontent.com/92745924/165688468-a7da08fe-83a0-4e4d-8a66-d14065bfbd38.png)
 
@@ -111,11 +111,11 @@ question and answer.
 
 ![image](https://user-images.githubusercontent.com/92745924/165599589-5775c9af-1401-43ed-8db0-52b217f19f09.png)
 
-- Change Password Page 
+- **Change Password Page**
 
 ![image](https://user-images.githubusercontent.com/92745924/165599863-0bf3b0cb-504b-430f-b434-8481f2f093f8.png)
 
-- Change Security Question and Answer Page
+- **Change Security Question and Answer Page**
 
 ![image](https://user-images.githubusercontent.com/92745924/165599951-92303053-f34e-4c85-aadb-064ee79e4b24.png)
 
